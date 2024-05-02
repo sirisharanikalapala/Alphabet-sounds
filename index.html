@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Alphabet sounds</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <style>
+    body {
+      text-align: center;
+      background-color: #283149;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      color: #DBEDF3;
+      font-family: "Arvo", cursive;
+      text-shadow: 3px 0 #DA0463;
+    }
+  
+    footer {
+      color: #DBEDF3;
+      font-family: sans-serif;
+      margin-top: 30px;
+    }
+  
+    .drum {
+      outline: none;
+      border: 10px solid #404B69;
+      font-size: 4rem;
+      font-family: 'Arvo', cursive;
+      line-height: 2;
+      font-weight: 900;
+      color:#DA0463;
+      text-shadow: 3px 0 #DBEDF3;
+      border-radius: 15px;
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      margin: 10px;
+      background-color: white;
+      background-size: cover;
+    }
+    
+    .a {
+      background-image: url("apple.jpg");
+    }
+  
+    .b {
+      background-image: url("ball.jpg");
+    }
+  
+    .c {
+      background-image: url("cat.jpg");
+    }
+  
+    .d {
+      background-image: url("dog.jpg");
+    }
+  
+    .e {
+      background-image: url("elephant.jpg");
+    }
+  
+    .f {
+      background-image: url("fish.jpg");
+    }
+  
+    .g {
+      background-image: url("goat.jpg");
+    }
+  
+    .h {
+      background-image: url("hen.jpg");
+    }
+  
+    .i {
+      background-image: url("ice.jpg");
+    }
+  
+    .j {
+      background-image: url("jug.jpg");
+    }
+  
+    .k {
+      background-image: url("kite.jpg");
+    }
+  
+    .l {
+      background-image: url("lemon.jpg");
+    }
+  
+    .m {
+      background-image: url("man.jpg");
+    }
+  
+    .n {
+      background-image: url("nest.jpg");
+    }
+  
+    .o {
+      background-image: url("owl.jpg");
+    }
+  
+    .p {
+      background-image: url("parrot.jpg");
+    }
+  
+    .q {
+      background-image: url("queen.jpg");
+    }
+  
+    .r {
+      background-image: url("rat.jpg");
+    }
+  
+    .s {
+      background-image: url("star.jpg");
+    }
+  
+    .t {
+      background-image: url("tiger.jpg");
+    }
+  
+    .u {
+      background-image: url("umbrella.jpg");
+    }
+  
+    .v {
+      background-image: url("van.jpg");
+    }
+  
+    .w {
+      background-image: url("water.jpg");
+    }
+  
+    .x {
+      background-image: url("xmas.jpg");
+    }
+  
+    .y {
+      background-image: url("yak.jpg");
+    }
+  
+    .z {
+      background-image: url("zebra.jpg");
+    }
+  
+  </style>
+</head>
+
+<body>
+
+  <h1 id="title">Alphabets</h1>
+  <div class="set">
+    <button class="drum a">A</button>
+    <button class="drum b">B</button>
+    <button class="drum c">C</button>
+    <button class="drum d">D</button>
+    <button class="drum e">E</button>
+    <button class="drum f">F</button>
+    <button class="drum g">G</button>
+    <button class="drum h">H</button>
+    <button class="drum i">I</button>
+    <button class="drum j">J</button>
+    <button class="drum k">K</button>
+    <button class="drum l">L</button>
+    <button class="drum m">M</button>
+    <button class="drum n">N</button>
+    <button class="drum o">O</button>
+    <button class="drum p">P</button>
+    <button class="drum q">Q</button>
+    <button class="drum r">R</button>
+    <button class="drum s">S</button>
+    <button class="drum t">T</button>
+    <button class="drum u">U</button>
+    <button class="drum v">V</button>
+    <button class="drum w">W</button>
+    <button class="drum x">X</button>
+    <button class="drum y">Y</button>
+    <button class="drum z">Z</button>
+  </div>
+  <script>
+var buttons = document.querySelectorAll(".drum");
+var numberOfButtons = buttons.length;
+var audio1 = new Audio("A.mp3");
+var audio2 = new Audio("B.mp3");
+var audio3 = new Audio("C.mp3");
+var audio4 = new Audio("D.mp3");
+var audio5 = new Audio("E.mp3");
+var audio6 = new Audio("F.mp3");
+var audio7 = new Audio("G.mp3");
+var audio8 = new Audio("H.mp3");
+var audio9 = new Audio("I.mp3");
+var audio10 = new Audio("J.mp3");
+var audio11 = new Audio("K.mp3");
+var audio12 = new Audio("L.mp3");
+var audio13 = new Audio("M.mp3");
+var audio14 = new Audio("N.mp3");
+var audio15 = new Audio("O.mp3");
+var audio16 = new Audio("P.mp3");
+var audio17 = new Audio("Q.mp3");
+var audio18 = new Audio("R.mp3");
+var audio19 = new Audio("S.mp3");
+var audio20 = new Audio("T.mp3");
+var audio21 = new Audio("U.mp3");
+var audio22 = new Audio("V.mp3");
+var audio23 = new Audio("W.mp3");
+var audio24 = new Audio("X.mp3");
+var audio25 = new Audio("Y.mp3");
+var audio26 = new Audio("Z.mp3");
+
+for (var i = 0; i < numberOfButtons; i++) {
+    buttons[i].addEventListener("click", function() {
+        var buttonSound = this.innerHTML;
+        switch (buttonSound) {
+            case "A":
+                audio1.play();
+                break;
+            case "B":
+                audio2.play();
+                break;
+            case "C":
+                audio3.play();
+                break;
+            case "D":
+                audio4.play();
+                break;
+            case "E":
+                audio5.play();
+                break;
+            case "F":
+                audio6.play();
+                break;
+            case "G":
+                audio7.play();
+                break;
+                
+            case "H":
+                audio8.play(); 
+                break;
+                
+             case "I":
+                audio9.play();
+                break;    
+            case "J":
+                audio10.play();
+                break;
+            case "K":
+                audio11.play();
+                break;
+            case "L":
+                audio12.play();
+                break;
+            case "M":
+                audio13.play();
+                break;
+            case "N":
+                audio14.play();
+                break;
+            case "O":
+                audio15.play();
+                break;
+            case "P":
+                audio16.play();
+                break;
+            case "Q":
+                audio17.play();
+                break;
+            case "R":
+                audio18.play();
+                break;
+            case "S":
+                audio19.play();
+                break;
+            case "T":
+                audio20.play();
+                break;
+            case "U":
+                audio21.play();
+                break;
+            case "V":
+                audio22.play();
+                break;
+            case "W":
+                audio23.play();
+                break;
+            case "X":
+                audio24.play();
+                break;
+            case "Y":
+                audio25.play();
+                break;
+            case "Z":
+                audio26.play();
+                break;
+
+
+
+
+
+        }
+    });
+}
+  </script>
+  
+  <footer>
+    Made with ❤️ in London.
+  </footer>
+
+</body>
+
+</html>
